@@ -45,6 +45,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   max-width: 100vw;
+  text-decoration: none;
 }
 
 .container {
@@ -523,12 +524,17 @@ section {
 .prizes {
   background: var(--white);
   padding-bottom: 40px;
+  padding-top: 0;
 }
 
 .single-prize-container {
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
+}
+
+.prize-link {
+  text-decoration: none;
 }
 
 .grand-prize-card {
@@ -545,8 +551,6 @@ section {
   max-width: 500px;
   width: 100%;
 }
-
-/* Removed gold border pseudo-element that was causing hover fill effect */
 
 .prize-glow {
   position: absolute;
@@ -1039,6 +1043,51 @@ section {
   font-size: 0.9rem;
   color: var(--medium-gray);
   font-weight: 500;
+}
+
+.disclaimer-text {
+  padding-top: 20px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--medium-gray);
+}
+
+.instagram-promo {
+  background: var(--white);
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.insta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insta-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--accent-purple);
+  transition: color 0.2s;
+}
+
+.insta-link:hover {
+  color: var(--primary-gold);
+}
+
+.insta-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.insta-handle {
+  font-family: var(--font-heading);
+  letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -1750,7 +1799,7 @@ section {
   }
 
   .prizes {
-    padding: 30px 1.5rem 40px 1.5rem;
+    padding: 0px 1.5rem 40px 1.5rem;
   }
 
   .about {
@@ -1902,6 +1951,13 @@ section {
   .grand-prize-card {
     padding: 1.5rem;
     max-width: 350px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .grand-prize-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15),
+      0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .grand-prize-card .prize-icon {
