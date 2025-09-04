@@ -1190,7 +1190,7 @@ section {
   }
 
   .prizes {
-    padding: 60px 2rem;
+    padding: 20px 2rem;
   }
 
   .how-it-works {
@@ -1303,11 +1303,11 @@ section {
   }
 
   .prizes {
-    padding: 60px 1.5rem;
+    padding: 40px 1.5rem;
   }
 
   .how-it-works {
-    padding: 60px 1.5rem;
+    padding: 20px 1.5rem;
   }
 
   .about {
@@ -1315,7 +1315,7 @@ section {
   }
 
   .final-cta {
-    padding: 60px 1.5rem;
+    padding: 20px 1.5rem 60px 1.5rem;
   }
 
   .footer {
@@ -1347,6 +1347,9 @@ section {
 
   .step {
     padding: 2.5rem;
+    width: 75%;
+    max-width: 500px;
+    justify-self: center;
   }
 
   .section-title {
@@ -1696,12 +1699,6 @@ section {
 
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
-  :root {
-    --section-padding: 60px 0;
-    --container-padding: 0 15px;
-  }
-
-  /* Ensure no horizontal overflow on mobile */
   html,
   body {
     overflow-x: hidden;
@@ -1709,14 +1706,9 @@ section {
     max-width: 100vw;
   }
 
-  /* Force all elements to respect viewport width */
   * {
     max-width: 100vw;
     box-sizing: border-box;
-  }
-
-  .hero {
-    padding-bottom: 80px;
   }
 
   .hero,
@@ -1725,6 +1717,14 @@ section {
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .single-prize-container {
+    padding: 20px 30px;
   }
 
   /* Additional mobile width fixes */
@@ -1750,7 +1750,7 @@ section {
   }
 
   .prizes {
-    padding: 90px 1.5rem 40px 1.5rem;
+    padding: 30px 1.5rem 40px 1.5rem;
   }
 
   .about {
@@ -1822,7 +1822,6 @@ section {
   /* Extra padding for blur effect space */
   .hero {
     padding-top: 120px;
-    padding-bottom: 6rem;
   }
 
   /* Extra breathing room for buttons */
@@ -1858,6 +1857,7 @@ section {
 
   .section-title {
     font-size: 1.6rem;
+    margin-bottom: 0px;
   }
 
   .stakes-title {
@@ -1868,6 +1868,7 @@ section {
   .step {
     padding: 1.5rem;
     text-align: left;
+    width: 100%;
   }
 
   .step-number {
@@ -1960,6 +1961,7 @@ section {
   .about-images {
     max-width: 350px;
     gap: 1rem;
+    padding-top: 45px;
   }
 
   .about-img {
@@ -1993,6 +1995,10 @@ section {
 
   .hero-photo {
     object-position: center -10%;
+  }
+
+  .cta-header {
+    margin-bottom: 20px;
   }
 }
 

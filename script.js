@@ -107,9 +107,9 @@ const observer = new IntersectionObserver(function (entries) {
 
 // Hero blur effect when scrolling to prizes section
 // Different behavior for different screen sizes
-const isMobile = window.innerWidth <= 768;
-const isTablet = window.innerWidth > 768 && window.innerWidth <= 1024;
-const isDesktop = window.innerWidth > 1024;
+let isMobile = window.innerWidth <= 768;
+let isTablet = window.innerWidth > 768 && window.innerWidth <= 1024;
+let isDesktop = window.innerWidth > 1024;
 
 // Configure blur options based on screen size
 let heroBlurOptions;
@@ -159,9 +159,9 @@ if (prizesSection) {
 
 // Handle resize events to update blur behavior
 window.addEventListener("resize", function () {
-  const newIsMobile = window.innerWidth <= 768;
-  const newIsTablet = window.innerWidth > 768 && window.innerWidth <= 1024;
-  const newIsDesktop = window.innerWidth > 1024;
+  let newIsMobile = window.innerWidth <= 768;
+  let newIsTablet = window.innerWidth > 768 && window.innerWidth <= 1024;
+  let newIsDesktop = window.innerWidth > 1024;
 
   // Only update if breakpoint changed
   if (
@@ -225,15 +225,15 @@ animateElements.forEach((el) => {
   observer.observe(el);
 });
 
-// Parallax effect for hero section
-const hero = document.querySelector(".hero");
-if (hero) {
-  window.addEventListener("scroll", function () {
-    const scrolled = window.pageYOffset;
-    const parallax = scrolled * 0.5;
-    hero.style.transform = `translateY(${parallax}px)`;
-  });
-}
+// // Parallax effect for hero section
+// const hero = document.querySelector(".hero");
+// if (hero) {
+//   window.addEventListener("scroll", function () {
+//     const scrolled = window.pageYOffset;
+//     const parallax = scrolled * 0.5;
+//     hero.style.transform = `translateY(${parallax}px)`;
+//   });
+// }
 
 // Button hover effects enhancement
 const buttons = document.querySelectorAll(".btn");
@@ -414,11 +414,11 @@ const throttledScrollHandler = throttle(function () {
   const scrolled = window.pageYOffset;
   const rate = scrolled * -0.5;
 
-  // Parallax effect for background elements
-  const heroBackground = document.querySelector(".hero::before");
-  if (heroBackground) {
-    heroBackground.style.transform = `translateY(${rate}px)`;
-  }
+  //   // Parallax effect for background elements
+  // const heroBackground = document.querySelector(".hero::before");
+  // if (heroBackground) {
+  //   heroBackground.style.transform = `translateY(${rate}px)`;
+  // }
 }, 16); // ~60fps
 
 window.addEventListener("scroll", throttledScrollHandler);
