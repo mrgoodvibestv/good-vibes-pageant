@@ -1046,48 +1046,10 @@ section {
 }
 
 .disclaimer-text {
-  padding-top: 20px;
+  padding: 20px 40px 0px 40px;
   font-size: 0.9rem;
   font-style: italic;
   color: var(--medium-gray);
-}
-
-.instagram-promo {
-  background: var(--white);
-  padding: 2rem 0 1rem 0;
-  text-align: center;
-}
-
-.insta-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.insta-link {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: var(--accent-purple);
-  transition: color 0.2s;
-}
-
-.insta-link:hover {
-  color: var(--primary-gold);
-}
-
-.insta-icon {
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-}
-
-.insta-handle {
-  font-family: var(--font-heading);
-  letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -1112,10 +1074,33 @@ section {
   font-weight: 500;
 }
 
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.socials-text {
+  font-size: 0.9rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
 .footer-copyright {
   color: var(--medium-gray);
   font-size: 0.9rem;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Responsive Design */
