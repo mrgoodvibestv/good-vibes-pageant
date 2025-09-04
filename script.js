@@ -259,30 +259,6 @@ prizeCards.forEach((card) => {
   });
 });
 
-// Form handling for CTAs (placeholder functionality)
-const ctaButtons = document.querySelectorAll(".btn-primary, .btn-secondary");
-ctaButtons.forEach((button) => {
-  button.addEventListener("click", function (e) {
-    // Check if it's an Apply button
-    if (this.textContent.includes("Apply")) {
-      e.preventDefault();
-      showApplicationModal();
-    } else if (this.textContent.includes("Tickets")) {
-      e.preventDefault();
-      showTicketsModal();
-    }
-  });
-});
-
-// Modal functions (placeholder)
-function showApplicationModal() {
-  alert("Application form would open here! This is a demo version.");
-}
-
-function showTicketsModal() {
-  alert("Ticket purchase would open here! This is a demo version.");
-}
-
 // Scroll to top functionality
 const scrollToTopBtn = document.createElement("button");
 scrollToTopBtn.innerHTML = "↑";
