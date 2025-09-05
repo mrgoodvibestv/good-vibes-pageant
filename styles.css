@@ -228,8 +228,7 @@ body {
 
 .title-line {
   display: block;
-  /* color: var(--text-dark); */
-  color: red;
+  color: var(--text-dark);
 }
 
 .beautiful-text {
