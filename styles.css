@@ -825,8 +825,7 @@ section {
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 80px 0;
-  padding-top: 20px;
+  padding: 0px 0px 20px 0px;
 }
 
 .cta-content {
@@ -1235,10 +1234,6 @@ a {
     padding: 60px 2rem;
   }
 
-  .final-cta {
-    padding: 60px 2rem;
-  }
-
   .footer {
     padding: 2rem 2rem;
   }
@@ -1246,7 +1241,6 @@ a {
 
 /* Large Tablet (1024px-1199px) */
 @media (max-width: 1024px) {
-  /* Large tablet optimization */
   .hero {
     min-height: 65vh;
     padding: 30px 2rem 25px 2rem;
@@ -1274,10 +1268,6 @@ a {
   }
 
   .about {
-    padding: 60px 2rem;
-  }
-
-  .final-cta {
     padding: 60px 2rem;
   }
 
@@ -1337,7 +1327,7 @@ a {
   }
 
   .prizes {
-    padding: 40px 1.5rem;
+    padding: 0px 1.5rem 40px 1.5rem;
   }
 
   .how-it-works {
@@ -1348,16 +1338,12 @@ a {
     padding: 60px 1.5rem;
   }
 
-  .final-cta {
-    padding: 20px 1.5rem 60px 1.5rem;
-  }
-
   .footer {
     padding: 2rem 1.5rem;
   }
 
   .hero-title {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
   }
 
   .hero-date {
@@ -1796,8 +1782,7 @@ a {
   }
 
   .final-cta {
-    padding-top: 0px;
-    padding-bottom: 15px;
+    padding: 0px 1.5rem 15px 1.5rem;
   }
 
   .how-it-works {
